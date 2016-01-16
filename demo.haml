@@ -1,0 +1,22 @@
+<!doctype html>
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "content-type"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %title ConsoleWriter Demo
+    :css
+      h1 {
+        color: black;
+      }
+
+    :javascript
+      console.clear()
+
+  %body
+    %h1.console-writer{'cw-sound' => 'true', 'cw-animation' => 'true'} Console-effect heading
+    %p.console-writer{'cw-typing-sound' => 'true'} Console-effect paragraph
+    %button.button Play Again
+
+    %script{:src => "jquery.js"}
+    %script{:src => "consolewriter.jquery.js"}
+    %script{:src => "demo.js"}
