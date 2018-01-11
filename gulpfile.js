@@ -1,11 +1,9 @@
-require('shelljs/global')
 var gulp        = require('gulp');
 var browsersync = require('browser-sync');
 var reload      = browsersync.reload
 var watch       = require('gulp-watch');
 var haml        = require('gulp-ruby-haml');
 var changed     = require('gulp-changed');
-var runsequence = require('run-sequence')
 var gcallback = require('gulp-callback')
 var plumber = require('gulp-plumber')
 var argv = require('yargs').argv
@@ -16,7 +14,7 @@ var messages = {
 
 function onError(err) {
   console.log(err)
-  exec('say what the fuck')
+  exec('say wtf')
 }
 
 gulp.task('reload', function () {
@@ -30,9 +28,9 @@ gulp.task('browser-sync', function() {
   browsersync({
     server: {
       baseDir: '.',
-      index: open
+      index: 'demo.html'
     },
-    browser: "safari",
+    browser: "Google Chrome"
   });
 });
 

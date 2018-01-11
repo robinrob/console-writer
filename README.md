@@ -21,16 +21,25 @@ values. **Option names should be prefixed with cw- when they are set using HTML 
 |:-----------------:|-------------------------------------------------------------------------|:---------------:|:--------:|:--------------:|
 | text              | Text to be displayed in the element (if not using element contents)     | String          | ""       | yes            |
 | animation         | Typewriter animation on/off                                             | Boolean         | false    | yes            |
+| sound             | Global sound on/off                                                     | Boolean         | false    | yes            |
 | animationSound    | Typewriter animation sound on/off                                       | Boolean         | false    | yes            |
 | typingSound       | Console typing sound on/off                                             | Boolean         | true     | yes            |
 | cursorFadeDuration| Fade duration of blinking console cursor (ms)                           | Number          | 500      | no             |
-| initialDelay      | Initial delay before typing animation begin                             | Number          | 150      | no             |
-| writeDelay        | Animation typing delay                                                  | Number          | 150      | no             |
+| initialDelay      | Initial delay before typing animation begin (in ms)                     | Number          | 150      | yes            |
+| writeDelay        | Animation typing delay (in ms)                                          | Number          | 150      | no            |
 | cursorCSS         | Override cursor CSS from javascript                                     | Plain Object    | false    | no             |
 | leadingCursor     | Inserts invisible leading cursor character (for horizontal alignment    | Object          | false    | yes            |
 | leadingCursorCSS  | Override CSS of leading cursor from javascript                          | Plain Object    | false    | no             |
 | callback          | Callback function to run after typewriter animation                     | Function        | N/A      | no             |
+| runOnLoad         | Toggles whether ConsoleWriter runs on page load                         | Function        | N/A      | yes             |
 
 ## Examples
 Examples of using ConsoleWriter can be viewed in the demo.html file included in the ConsoleWriter Github
-[repository](https://github.com/robinrob/consolewriter.jquery.js).
+[repository](https://github.com/robinrob/console-writer/blob/master/demo.html).
+
+## Dev dependencies
+To develop ConsoleWriter using my setup, do the following:
+* Install node 5.5.0: `nvm install 5.5.0`
+* Use node 5.5.0: `nvm use 5.5.0`
+* Install node packages: `npm install`
+* Run gulp: `gulp`. This should open the demo.html file in a browser.

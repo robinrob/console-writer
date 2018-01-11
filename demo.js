@@ -10,5 +10,7 @@ $button.on("click", function() {
     for (var i = 0 ; i < highestTimeoutId ; i++) {
         clearTimeout(i);
     }
-    $('.live-input').liveInput()
+    $('.console-writer').consoleWriter({
+        writeDelay: 100
+    })
 })

@@ -13,8 +13,9 @@
       console.clear()
 
   %body
-    %h1.console-writer{'cw-sound' => 'true', 'cw-animation' => 'true'} Console-effect heading
-    %p.console-writer{'cw-typing-sound' => 'true'} Console-effect paragraph
+    %h1.console-writer{'cw-sound' => 'false', 'cw-animation' => 'true'} Console-effect heading
+    %p.console-writer{'cw-sound' => 'true',  'cw-animation' => 'true', 'cw-initial-delay' => '1000', 'cw-text' => 'You can replace the text with something else.'} Console-effect paragraph.
+    %p.console-writer{'cw-sound' => 'true',  'cw-animation' => 'true', 'cw-text' => 'You can prevent automatic running on page load.', 'cw-run-on-load' => 'false'}
     %button.button Play Again
 
     %script{:src => "jquery.js"}

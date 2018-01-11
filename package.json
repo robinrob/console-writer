@@ -1,0 +1,32 @@
+{
+  "name": "console-writer",
+  "version": "1.0.0",
+  "description": "This is a jQuery plugin that performs realistic typewriter behaviour on inline text elements and also allows  console-style editing of the displayed text.",
+  "main": "consolewriter.jquery.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robinrob/console-writer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robinrob/console-writer/issues"
+  },
+  "homepage": "https://github.com/robinrob/console-writer#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.5",
+    "gulp": "^3.9.1",
+    "gulp-callback": "0.0.3",
+    "gulp-changed": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-ruby-haml": "0.0.9",
+    "gulp-watch": "^5.0.0",
+    "yargs": "^10.1.1"
+  },
+  "engines": {
+    "node": "==5.5.0"
+  }
+}
