@@ -26,12 +26,12 @@ values. **Option names should be prefixed with cw- when they are set using HTML 
 | typingSound       | Console typing sound on/off                                             | Boolean         | true     | yes            |
 | cursorFadeDuration| Fade duration of blinking console cursor (ms)                           | Number          | 500      | no             |
 | initialDelay      | Initial delay before typing animation begin (in ms)                     | Number          | 150      | yes            |
-| writeDelay        | Animation typing delay (in ms)                                          | Number          | 150      | no            |
+| writeDelay        | Animation typing delay (in ms)                                          | Number          | 150      | no             |
 | cursorCSS         | Override cursor CSS from javascript                                     | Plain Object    | false    | no             |
 | leadingCursor     | Inserts invisible leading cursor character (for horizontal alignment    | Object          | false    | yes            |
 | leadingCursorCSS  | Override CSS of leading cursor from javascript                          | Plain Object    | false    | no             |
 | callback          | Callback function to run after typewriter animation                     | Function        | N/A      | no             |
-| runOnLoad         | Toggles whether ConsoleWriter runs on page load                         | Function        | N/A      | yes             |
+| runOnLoad         | Toggles whether ConsoleWriter runs on page load                         | Boolean         | N/A      | yes            |
 
 ## Examples
 Examples of using ConsoleWriter can be viewed in the demo.html file included in the ConsoleWriter Github
