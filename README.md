@@ -13,6 +13,8 @@ ConsoleWriter can also be invoked on an element using jQuery like this:
 
 Detail on setting and using options is covered below.
 
+For more on ConsoleWriter, check out my [blog post](https://rsmith.io/blog/console-writer-jquery-plugin/) about it.
+
 ## Options
 Below is a table showing all current options, their effects, default values and supported methods for setting their
 values. **Option names should be prefixed with cw- when they are set using HTML element attributes.**
@@ -31,11 +33,12 @@ values. **Option names should be prefixed with cw- when they are set using HTML 
 | leadingCursor     | Inserts invisible leading cursor character (for horizontal alignment    | Object          | false    | yes            |
 | leadingCursorCSS  | Override CSS of leading cursor from javascript                          | Plain Object    | false    | no             |
 | callback          | Callback function to run after typewriter animation                     | Function        | N/A      | no             |
-| runOnLoad         | Toggles whether ConsoleWriter runs on page load                         | Boolean         | N/A      | yes            |
+| runOnLoad         | Toggles whether ConsoleWriter runs on page load                         | Boolean         | true     | yes            |
 
 ## Examples
-Examples of using ConsoleWriter can be viewed in the demo.html file included in the ConsoleWriter Github
-[repository](https://github.com/robinrob/console-writer/blob/master/demo.html).
+Examples of using ConsoleWriter can be viewed in the [demo.html](https://github.com/robinrob/console-writer/blob/master/demo.html)
+file.
+
 
 ## Dev dependencies
 To develop ConsoleWriter using my setup, do the following:
